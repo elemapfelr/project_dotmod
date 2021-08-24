@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import url(common/reset.css);
+
+#wrap {
+    width: 100%;
+    height: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 154px;
+    /* border: 1px solid #00ff00;
+    box-sizing: border-box; */
+    transition: all 0.2s;
+}
+.container .inner-container{
+    width: 100%;
+    height: auto;
+}
+.container .inner-container .section{
+    width: 100%;
+    height: auto;
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 4rem;
+    box-sizing: border-box;
+}
+
+.container .inner-container .section h1.titleText {
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    cursor: default;
+}
+
+.container .inner-container .section span.bar {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #d7b740;
+    margin: 10px auto 0 auto;
+}
+.container .inner-container .section .collection{
+    width: 100%;
+    height: auto;
+}
+.container .inner-container .section .collection .top-con{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .inner-container .section .collection .top-con .selectWrap{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .inner-container .section .collection .top-con .selectWrap label{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 100;
+}
+.container .inner-container .section .collection .top-con .selectWrap label::after{
+    content: '-';
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+.container .inner-container .section .collection .top-con .selectWrap select{
+    border: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2rem;
+    height: 2rem;
+}
+.container .inner-container .section .collection .bottom-con{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+.container .inner-container .section .collection .bottom-con>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .inner-container .section .collection .bottom-con>ul>li{
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .product-img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border: 0px solid;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .product-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+}
+.off{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+.onhover{
+    opacity: 1 !important;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .bTxt{
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .bTxt h3.itemName{
+    font-weight: 200;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.container .inner-container .section .collection .bottom-con>ul>li:hover .bTxt h3.itemName{
+    color: #777;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .bTxt p.price{
+    font-size: 0.8rem;
+    text-align: center;
+    opacity: 0;
+}
+.container .inner-container .section .collection .bottom-con>ul>li .product-img span{
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: auto;
+    text-align: center;
+    bottom: -1rem;
+    background-color: #d7b740;
+    line-height: 2.5rem;
+    font-weight: 100;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 959px){
+    .container .inner-container .section{
+        padding: 2rem 1rem;
+    }
+    .container .inner-container .section h1.titleText {
+        font-size: 1.5rem;
+    }
+    .container .inner-container .section .collection .top-con .selectWrap{
+        max-width: 200px;
+        margin-top: 1rem;
+    }
+    .container .inner-container .section .collection .top-con .selectWrap label{
+        font-size: 0.8rem;
+    }
+    .container .inner-container .section .collection .top-con .selectWrap select{
+        font-size: 0.8rem;
+    }
+    .container .inner-container .section .collection .bottom-con>ul>li{
+        width: 45%;
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .container .inner-container .section{
+        padding: 2rem 0rem;
+    }
+    .container .inner-container .section h1.titleText {
+        font-size: 1.2rem;
+    }
+    .container .inner-container .section .collection .bottom-con>ul{
+        justify-content: center;
+    }
+    .container .inner-container .section .collection .bottom-con>ul>li{
+        width: 80%;
+    }
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited Release</title>
+    <link rel="stylesheet" href="css/dotmod_header.css">
+    <link rel="stylesheet" href="css/dotmod_footer.css">
+    <link rel="stylesheet" href="css/dotmod_limited.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="js/dotmod_header_search.js" defer></script>
+    <script src="js/limited_release.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="inner-header">
+                <div class="nav">
+                    <div class="rnb">
+                        <ul>
+                            <li><a href="dotmod_join.html">JOIN</a></li>
+                            <li><a href="dotmod_login.html">LOGIN</a></li>
+                            <li><a href="#">CART</a></li>
+                            <li class="searchBtn"><a href="#"><img src="img/search.png" alt="검색"></a>
+                                <div class="searchbar">
+                                    <form action="searchOK.do" method="POST" id="searchForm">
+                                        <span class="cancel">X</span>
+                                        <input type="text" name="searchTxt" id="searchTxt">
+                                        <input type="button" value="Search" name="searchOkBtn" id="searchOkBtn">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="메인로고"></a>
+                    </h1>
+                    <div class="gnb">
+                        <ul>
+                            <li><a href="#">DEVICES <img src="img/spanarrow.png" alt="메뉴펼치기"></a>
+                                <div class="none">
+                                    <ul class="secondUl">
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="limited_release.html">LIMITED RELEASE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotBling</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tiffany Blue</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Purple</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">DOT AIO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO mini</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO SE</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">REGULATED MODS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotbox 220w</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotStick</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotBox 200w</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">MECHANICAL MODS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotMech</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotSquonk</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotBox Dual Mech</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">ATOMIZERS <img src="img/spanarrow.png" alt="메뉴펼치기"></a>
+                                <div class="none">
+                                    <ul class="secondUl">
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">RDA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotRDA 24mm V1.5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotRDA Single Coil</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">RTA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotMTL</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">RDTA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotRDTA</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">TANK'S</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotStick Tank</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">ACCESSORIES <img src="img/spanarrow.png" alt="메뉴펼치기"></a>
+                                <div class="none">
+                                    <ul class="secondUl">
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">DOORS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO Doors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO mini Doors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotSquonk Doors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotSquonk 100w Doors</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotBox Dual Mech Doors</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">COILS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotStick Coils</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO Coils</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotTank Coils</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO RBA</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">OTHER</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotAIO Tanks</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotStick Replacement Tank</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Bottles</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Drip Tips</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Caps</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">SERVICE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Service Packs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Replacement Glass</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Button Upgrade</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">LIFESTYLE <img src="img/spanarrow.png" alt="메뉴펼치기"></a>
+                                <div class="none">
+                                    <ul class="secondUl">
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">T SHIRTS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotmod Logo T-Shirt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotmod Script T-Shirt</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">HOODIE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotmod HOODIE</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">HATS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Baseball Hat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Snapback</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">EXTRAS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotKey</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Battery Wraps</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Build Mat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pen</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">dotStick Lanyard</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">EXTRAS <img src="img/spanarrow.png" alt="메뉴펼치기"></a>
+                                <div class="none">
+                                    <ul class="secondUl">
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">SUPPORT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">A/S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">CONTACT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Address</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Email</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">ABOUT</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">About dotmod</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Company History</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li class="top">
+                                                    <a href="#">NOTICE</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Recruit</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lnb">
+                        <span class="button"></span>
+                        <div class="menubar">
+                            <ul class="sub-rnb">
+                                <li><a href="dotmod_join.html">JOIN</a></li>
+                                <li><a href="dotmod_login.html">LOGIN</a></li>
+                                <li><a href="#">CART</a></li>
+                            </ul>
+                            <ul class="sub-gnb">
+                                <li class="searchbar" id="sub_searchbar">
+                                    <form action="searchOK.do" method="POST" id="sub_searchForm" class="sub_searchForm">
+                                        <input type="text" name="searchTxt" id="sub_searchTxt" class="sub_searchTxt">
+                                        <input type="button" value="Search" name="searchOkBtn" id="sub_searchOkBtn"
+                                            class="sub_searchOkBtn">
+                                    </form>
+                                </li>
+                                <li><a href="#">DEVICES</a>
+                                    <ul>
+                                        <li><a href="limited_release.html">LIMITED RELEASE</a></li>
+                                        <li><a href="#">DOTAIO</a></li>
+                                        <li><a href="#">REGULATED MODS</a></li>
+                                        <li><a href="#">MECHANICAL MODS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ATOMIZERS</a>
+                                    <ul>
+                                        <li><a href="#">RDA</a></li>
+                                        <li><a href="#">RTA</a></li>
+                                        <li><a href="#">RDTA</a></li>
+                                        <li><a href="#">TANK'S</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ACCESSORIES</a>
+                                    <ul>
+                                        <li><a href="#">DOORS</a></li>
+                                        <li><a href="#">COILS</a></li>
+                                        <li><a href="#">OTHERS</a></li>
+                                        <li><a href="#">SERVICE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">LIFESTYLE</a>
+                                    <ul>
+                                        <li><a href="#">T SHIRTS</a></li>
+                                        <li><a href="#">HOODIE</a></li>
+                                        <li><a href="#">HATS</a></li>
+                                        <li><a href="#">ACC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">EXTRAS</a>
+                                    <ul>
+                                        <li><a href="#">BATTERIES</a></li>
+                                        <li><a href="#">WRAPS</a></li>
+                                        <li><a href="#">WIRES</a></li>
+                                        <li><a href="#">COTTON</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="lnbCancel">X</span>
+                    </div>
+                    <span class="goUIUX"><a href="../Portfolio_main/UIUX.html">Go UIUX</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="inner-container">
+                <div class="section">
+                    <h1 class="titleText">TIFFANY BLUE・LIMITED RELEASE</h1>
+                    <span class="bar"></span>
+                    <div class="collection">
+                        <div class="top-con">
+                            <div class="selectWrap">
+                                <label for="SortBy">Sort by</label>
+                                <select name="SortBy" id="SortBy">
+                                    <option value="Featured">Featured</option>
+                                    <option value="Best-selling">Best-Selling</option>
+                                    <option value="Price-Descending">Price:High to Low</option>
+                                    <option value="Price-Ascending">Price:Low to High</option>
+                                    <option value="Title-Descending">Alphabet:A-Z</option>
+                                    <option value="Title-Ascending">Alphabet:Z-A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bottom-con">
+                            <ul>
+                                <li>
+                                    <div class="product-img">
+                                        <img src="img/item1.jpg" alt="DOTAIO TIFFANY FROST_1" class="onhover">
+                                        <img src="img/item1_1.jpg" alt="DOTAIO TIFFANY FROST_2" class="off">
+                                        <span class="optionBar">SELECT OPTIONS</span>
+                                    </div>
+                                    <div class="bTxt">
+                                        <h3 class="itemName">DOTAIO TIFFANY FROST · LIMITED RELEASE</h3>
+                                        <p class="price">$120.00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-img">
+                                        <img src="img/item2.jpg" alt="DOTAIO MINI TIFFANY FROST_1" class="onhover">
+                                        <img src="img/item2_1.jpg" alt="DOTAIO MINI TIFFANY FROST_2" class="off">
+                                        <span class="optionBar">SELECT OPTIONS</span>
+                                    </div>
+                                    <div class="bTxt">
+                                        <h3 class="itemName">DOTAIO MINI · TIFFANY BLUE · LIMITED RELEASE</h3>
+                                        <p class="price">$99.00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-img">
+                                        <img src="img/dotaio_door.jpg" alt="DOTAIO TIFFANY FROST Door" class="onhover">
+                                        <span class="optionBar">SELECT OPTIONS</span>
+                                    </div>
+                                    <div class="bTxt">
+                                        <h3 class="itemName">DOTAIO TIFFANY FROST DOORS · TIFFANY BLUE · LIMITED RELEASE
+                                        </h3>
+                                        <p class="price">$15.00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-img">
+                                        <img src="img/dotaio_mini_door.jpg" alt="DOTAIO MINI TIFFANY FROST Door"
+                                            class="onhover">
+                                        <span class="optionBar">SELECT OPTIONS</span>
+                                    </div>
+                                    <div class="bTxt">
+                                        <h3 class="itemName">DOTAIO MINI REPLACEMENT DOORS · TIFFANY BLUE · LIMITED
+                                            RELEASE</h3>
+                                        <p class="price">$24.00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-con">
+                    <div class="items">
+                        <div class="general">
+                            <h3 class="title">GENERAL</h3>
+                            <ul class="footertxt">
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Health & Safety</li>
+                                <li>Authenticity Check</li>
+                                <li>Limited Lifetime Warranty</li>
+                            </ul>
+                        </div>
+                        <div class="information">
+                            <h3 class="title">INFORMATION</h3>
+                            <ul class="footertxt">
+                                <li>Terms and Conditions</li>
+                                <li>Privacy & Security</li>
+                                <li>Cookie Policy</li>
+                                <li>Shipping & Customs</li>
+                                <li>Compliance & Liability</li>
+                                <li>Recycle Program</li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <h3 class="title">SOCIAL</h3>
+                            <ul>
+                                <li><img src="img/sns_facebook.png" alt="facebook"></li>
+                                <li><img src="img/sns_twitter.png" alt="twitter"></li>
+                                <li><img src="img/sns_instagram.png" alt="instagram"></li>
+                                <li><img src="img/sns_youtube.png" alt="youtube"></li>
+                            </ul>
+                        </div>
+                        <div class="contact">
+                            <h3 class="title">CONTACT</h3>
+                            <p class="footertxt">customerservice@dotmod.com</p>
+                        </div>
+                    </div>
+                    <div class="btxt">
+                        <div class="btxt-left">
+                            <span class="copyright">ⓒ2021, dotmodretail</span>
+                            <span class="powered">Powered by Shopify</span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="cardsLogo">
+                            <ul>
+                                <li><img src="img/amex.png" alt="amex"></li>
+                                <li><img src="img/mastercard.png" alt="mastercard"></li>
+                                <li><img src="img/visa.png" alt="visa"></li>
+                            </ul>
+                        </div>
+                        <div class="validate">
+                            <p>
+                                <a href="http://validator.kldp.org/check?uri=referer"
+                                    onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+                                        src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5"
+                                        height="15" width="80"></a>
+                            </p>
+                            <p>
+                                <a href="http://css-validator.kldp.org/check/referer">
+                                    <img style="border:0;width:80px;height:15px"
+                                        src="//css-validator.kldp.org/images/validate/css-blue" alt="올바른 CSS입니다!" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

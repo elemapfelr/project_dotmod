@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url(common/reset.css);
+
+#wrap {
+    width: 100%;
+    height: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 154px;
+    /* border: 1px solid #00ff00;
+    box-sizing: border-box; */
+    transition: all 0.2s;
+}
+
+.container .join {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+.container .join h1.jointext {
+    display: block;
+    text-align: center;
+    font-weight: 100;
+}
+
+.container .join span.bar {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #d7b740;
+    margin: 10px auto 0 auto;
+}
+
+.container .join .input {
+    width: 100%;
+    max-width: 1000px;
+    height: 50px;
+    display: block;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    text-indent: 10px;
+}
+.container .join .pw{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .join .pw .pw1{
+    width: 48%;
+}
+.container .join .pw .pw2{
+    width: 48%;
+}
+
+.container .join .bottom-con{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container .join .bottom-con .left-con{
+    width: 48%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .join #joinOkBtn {
+    width:40%;
+    max-width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 0;
+    background: #d7b740;
+}
+span.returnhome{
+    width: 60%;
+    text-align: center;
+}
+
+span.returnhome a {
+    color: #000;
+    line-height: 50px;
+}
+
+.container .join .pwcheck{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.container .join .pwcheck span.pwChecked{
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 50px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 767px){
+    .container {
+        padding-top: 124px;
+    }
+    .container .join h1.jointext {
+        font-size: 1.5rem;
+    }
+    .container .join #joinOkBtn, span.returnhome {
+        font-size: 0.7rem;
+    }
+}
