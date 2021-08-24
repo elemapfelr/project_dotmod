@@ -201,6 +201,7 @@ window.onload = function(){
 //YES 클릭시 레이어팝업 닫기
 $spanBtnYes.on('click',()=>{
     layerPopupHide();
+    loadGallery();
 });
 //NO 클릭시 포트폴리오UIUX페이지로 이동
 $spanBtnNo.on('click',()=>{
@@ -213,4 +214,9 @@ function layerPopupShow() {
 
 function layerPopupHide() {
     $layerPopup.hide(500);
+}
+
+function loadGallery(){
+    const sections=document.querySelector('.sections')
+    sections.style.filter=('blur(0)')
 }

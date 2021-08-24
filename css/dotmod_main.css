@@ -11,8 +11,8 @@
     width: 100%;
     height: auto;
     padding-top: 124px;
-    /* border: 1px solid #00ff00;
-    box-sizing: border-box; */
+    /* border: 1px solid #00ff00; */
+    box-sizing: border-box;
 }
 
 .container .inner-container {
@@ -25,6 +25,8 @@
 .container .inner-container .sections {
     width: 100%;
     height: auto;
+    filter: blur(2rem);
+    transition: all 0.5s;
     /* border: 1px solid;
     box-sizing: border-box; */
 }
