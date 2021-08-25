@@ -19,6 +19,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
+    <!-- 스크롤관련 제이쿼리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -455,7 +457,8 @@
                         </div>
                         <div class="bottom-con">
                             <ul>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-anchor-placement="top-bottom" data-aos-anchor=".header">
                                     <div class="product-img">
                                         <img src="img/item1.jpg" alt="DOTAIO TIFFANY FROST_1" class="onhover">
                                         <img src="img/item1_1.jpg" alt="DOTAIO TIFFANY FROST_2" class="off">
@@ -466,7 +469,8 @@
                                         <p class="price">$120.00</p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="250" data-aos-anchor=".header">
                                     <div class="product-img">
                                         <img src="img/item2.jpg" alt="DOTAIO MINI TIFFANY FROST_1" class="onhover">
                                         <img src="img/item2_1.jpg" alt="DOTAIO MINI TIFFANY FROST_2" class="off">
@@ -477,7 +481,8 @@
                                         <p class="price">$99.00</p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-anchor=".header">
                                     <div class="product-img">
                                         <img src="img/dotaio_door.jpg" alt="DOTAIO TIFFANY FROST Door" class="onhover">
                                         <span class="optionBar">SELECT OPTIONS</span>
@@ -488,7 +493,8 @@
                                         <p class="price">$15.00</p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="750" data-aos-anchor=".header">
                                     <div class="product-img">
                                         <img src="img/dotaio_mini_door.jpg" alt="DOTAIO MINI TIFFANY FROST Door"
                                             class="onhover">
@@ -579,6 +585,11 @@
             </div>
         </div>
     </div>
+    <!-- 스크롤관련 제이쿼리 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

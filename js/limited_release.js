@@ -40,27 +40,54 @@ for (let i = 0; i < productLi.length; i++) {
     })
 }
 
-productLi[0].addEventListener('mouseover',()=>{
-    productLiImg[1].classList.add('onhover')
-    productLiImg[0].classList.remove('onhover')
-    productLiImg[1].style.transition='all 0.5s'
-    productLiImg[0].style.transition='all 0.5s'
-})
-productLi[1].addEventListener('mouseover',()=>{
-    productLiImg[3].classList.add('onhover')
-    productLiImg[2].classList.remove('onhover')
-    productLiImg[3].style.transition='all 0.5s'
-    productLiImg[2].style.transition='all 0.5s'
-})
-productLi[0].addEventListener('mouseout',()=>{
-    productLiImg[0].classList.add('onhover')
-    productLiImg[1].classList.remove('onhover')
-    productLiImg[1].style.transition='all 0.5s'
-    productLiImg[0].style.transition='all 0.5s'
-})
-productLi[1].addEventListener('mouseout',()=>{
-    productLiImg[2].classList.add('onhover')
-    productLiImg[3].classList.remove('onhover')
-    productLiImg[2].style.transition='all 0.5s'
-    productLiImg[3].style.transition='all 0.5s'
-})
+//forEach 사용 안하고 각자 적용
+// productLi[0].addEventListener('mouseover',()=>{
+//     productLiImg[1].classList.add('onhover')
+//     productLiImg[0].classList.remove('onhover')
+//     productLiImg[1].style.transition='all 0.5s'
+//     productLiImg[0].style.transition='all 0.5s'
+// })
+// productLi[1].addEventListener('mouseover',()=>{
+//     productLiImg[3].classList.add('onhover')
+//     productLiImg[2].classList.remove('onhover')
+//     productLiImg[3].style.transition='all 0.5s'
+//     productLiImg[2].style.transition='all 0.5s'
+// })
+// productLi[0].addEventListener('mouseout',()=>{
+//     productLiImg[0].classList.add('onhover')
+//     productLiImg[1].classList.remove('onhover')
+//     productLiImg[1].style.transition='all 0.5s'
+//     productLiImg[0].style.transition='all 0.5s'
+// })
+// productLi[1].addEventListener('mouseout',()=>{
+//     productLiImg[2].classList.add('onhover')
+//     productLiImg[3].classList.remove('onhover')
+//     productLiImg[2].style.transition='all 0.5s'
+//     productLiImg[3].style.transition='all 0.5s'
+// })
+
+productLi.forEach(el => {
+    el.addEventListener('mouseover',productLiHover)
+    el.addEventListener('mouseout',productLiOut)
+});
+
+function productLiHover(){
+    const _this=event.currentTarget;
+    const _this_img=_this.querySelectorAll('.product-img>img');
+    if(_this_img.length==2){
+        _this_img[1].classList.add('onhover');
+        _this_img[1].style.filter=('brightness(90%)');
+        _this_img[0].classList.remove('onhover');
+    }else{
+        _this_img[0].style.filter=('brightness(90%)');
+    }
+}
+function productLiOut(){
+    const _this=event.currentTarget;
+    const _this_img=_this.querySelectorAll('.product-img>img');
+    _this_img[0].style.filter=('brightness(100%)');
+    if(_this_img.length==2){
+        _this_img[1].classList.remove('onhover');
+        _this_img[0].classList.add('onhover');
+    }
+}
