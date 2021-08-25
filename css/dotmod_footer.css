@@ -139,6 +139,9 @@
 .footer-con .cards .validate{
     display: flex;
 }
+.footer-con .cards .validate p img{
+    display: block;
+}
 
 @media only screen and (max-width: 767px){
     .footer .inner-footer .footer-con .items {
